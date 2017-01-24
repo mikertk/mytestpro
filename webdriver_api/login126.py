@@ -1,4 +1,5 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/22
 Method:
@@ -7,7 +8,7 @@ Method:
   *  click()   点击任何可点击的元素（按钮、链接、复选框等）
   *  switch_to.frame()  进入表单
   *  switch_to.default_content()  退出表单至根页面
-'''
+"""
 from selenium import webdriver
 
 driver = webdriver.Chrome()

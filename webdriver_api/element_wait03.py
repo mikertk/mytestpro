@@ -1,9 +1,10 @@
-'''
-Author: 虫师
+# coding=utf-8
+"""
+Author: Miker
 Date: 2016/11/24
 Method:
   *  implicitly_wait() 隐式等待
-'''
+"""
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from time import ctime

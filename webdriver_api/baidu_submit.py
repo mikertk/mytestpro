@@ -1,9 +1,10 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/22
-Method: 
+Method:
   *  submit()   提交表单内容
-'''
+"""
 from selenium import webdriver
 
 driver = webdriver.Chrome()

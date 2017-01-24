@@ -1,4 +1,5 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/22
 Method:
@@ -14,10 +15,14 @@ Method:
   * send_keys(Keys.F1) 键盘 F1
   ……
   * send_keys(Keys.F12) 键盘 F12
-'''
+"""
 from selenium import webdriver
 # 引入 Keys 模块
 from selenium.webdriver.common.keys import Keys
+from time import sleep
+# import sys
+# reload(sys)
+# sys.setdefaultencoding('utf-8')
 
 
 driver = webdriver.Chrome()
@@ -26,24 +31,31 @@ driver.get("https://www.baidu.com")
 
 # 输入框输入内容
 driver.find_element_by_id("kw").send_keys("seleniumm")
-
+sleep(1)
 # 删除多输入的一个 m
 driver.find_element_by_id("kw").send_keys(Keys.BACK_SPACE)
+sleep(1)
 
 # 输入空格键+“教程”
 driver.find_element_by_id("kw").send_keys(Keys.SPACE)
-driver.find_element_by_id("kw").send_keys("教程")
+sleep(1)
+driver.find_element_by_id("kw").send_keys(u"教程")
+sleep(1)
 
 # ctrl+a 全选输入框内容
 driver.find_element_by_id("kw").send_keys(Keys.CONTROL, 'a')
+sleep(1)
 
 # ctrl+x 剪切输入框内容
 driver.find_element_by_id("kw").send_keys(Keys.CONTROL, 'x')
+sleep(1)
 
 # ctrl+v 粘贴内容到输入框
 driver.find_element_by_id("kw").send_keys(Keys.CONTROL, 'v')
+sleep(1)
 
 # 通过回车键来代替单击操作
 driver.find_element_by_id("su").send_keys(Keys.ENTER)
+sleep(1)
 
 driver.quit()

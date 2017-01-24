@@ -1,9 +1,12 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/24
 Method:
   *
-'''
+"""
+from time import ctime, sleep
+
 from selenium import webdriver
 
 

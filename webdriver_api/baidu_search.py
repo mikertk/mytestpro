@@ -1,7 +1,8 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/22
-'''
+"""
 from selenium import webdriver
 
 driver = webdriver.Chrome()

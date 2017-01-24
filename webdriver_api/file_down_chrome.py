@@ -1,10 +1,11 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/12/1
 Method:
   * download.default_directory 指定文件下载路径。
   * profile.default_content_settings.popups 设置0，禁止下载时弹出窗口。
-'''
+"""
 from selenium import webdriver
 import os
 

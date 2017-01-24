@@ -1,11 +1,12 @@
-'''
+# coding=utf-8
+"""
 Author: 虫师
 Date: 2016/11/22
 Method:
   *  switch_to.window()  切换窗口
   *  current_window_handle 获得当前窗口的句柄
   *  window_handles：返回所有窗口的句柄到当前会话
-'''
+"""
 from selenium import webdriver
 import time
 
