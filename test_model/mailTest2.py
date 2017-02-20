@@ -1,12 +1,14 @@
+# coding=utf-8
 from selenium import webdriver
 from public2 import Login
+
 
 class LoginTest():
     def __init__(self):
         self.driver = webdriver.Chrome()
         self.driver.implicitly_wait(10)
         self.driver.get("http://www.126.com")
-    
+
     # admin 用户登录
     def test_admin_login(self):
         username = 'admin'
@@ -20,6 +22,7 @@ class LoginTest():
         password = '321'
         Login().user_login(self.driver, username, password)
         self.driver.quit()
+
 
 # 执行测试
 LoginTest().test_admin_login()

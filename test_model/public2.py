@@ -1,7 +1,8 @@
+# coding=utf-8
 class Login():
 
     # 登录
-    def user_login(self, driver,username,passwrod):
+    def user_login(self, driver, username, password):
         driver.switch_to.frame('x-URS-iframe')
         driver.find_element_by_id("idInput").clear()
         driver.find_element_by_id("idInput").send_keys(username)

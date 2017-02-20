@@ -1,4 +1,6 @@
+# coding=utf-8
 from selenium import webdriver
+
 
 # 登录模块
 def login():
@@ -10,6 +12,7 @@ def login():
     driver.find_element_by_id("loginBtn").click()
     driver.switch_to.default_content()
 
+
 # 退出模块
 def logout():
     driver.find_element_by_link_text("退出").click()
@@ -20,9 +23,9 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 driver.get("http://www.126.com")
 
-login() # 调用登录模块
+login()  # 调用登录模块
 
 # 收信、写信、删除信件等操作
 # ……
 
-logout() # 调用退出模块
+logout()  # 调用退出模块

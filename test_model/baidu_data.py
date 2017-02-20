@@ -1,6 +1,7 @@
+# coding=utf-8
 from selenium import webdriver
 
-search_text = ['python', '中文', 'text']
+search_text = ['python', u'中文', 'text']
 
 for text in search_text:
     driver = webdriver.Chrome()

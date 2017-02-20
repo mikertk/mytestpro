@@ -1,3 +1,4 @@
+# coding=utf-8
 import csv
 
 # 读取本地 CSV 文件
